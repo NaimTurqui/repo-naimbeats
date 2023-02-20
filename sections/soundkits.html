@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- en esta pagina decidi no poner el CDN de boostrap, ya que me desacomodaba las cajas de los soundkits y no sabia como solucionarlo. La unica manera que encontre fue sacandolo. -->
 	<link rel="stylesheet" href="../style/style.css">
     <title>Naimbeats | sound kits</title>
@@ -31,7 +32,7 @@
 		</nav>
 	</header>
 	<main>
-		<div class="grid-sk">
+		<div data-aos="zoom-in" class="grid-sk">
 			<div class="caja-sk" class="g-area-sb-uno">
 				<img class="img-sk" src="../img/sk-art.png" alt="">
 				<h2>Serum Bank Vol.1</h2>
@@ -72,5 +73,9 @@
 		<a href="https://www.instagram.com/naim_09/" target="_blank"> <img class="icon" src="../img/icons8-instagram.svg" alt=""></a>
 		<a href="https://www.youtube.com/@naim0913/videos" target="_blank"> <img class="icon" src="../img/icons8-youtube.svg" alt=""></a>
 	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>

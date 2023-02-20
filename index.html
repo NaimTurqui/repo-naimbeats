@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./style/style.css">
 	<title>Naimbeats</title>
@@ -33,11 +34,11 @@
 		</nav>
 	</header>
 	<section class="text">
-		<h2>Latest tracks available</h2>
+		<h2 data-aos="fade-right">Latest tracks available</h2>
 	</section>
 	<main>
 		<!-- en la esta parte no puede hacer que sea responsive, ya que al usar grid-area los elementos de la caja quedaban muy desacomodados. Por otro lado, cuando probe con boostrap los cambios quedaban como defualt, es decir que no reconocian el breakpoint -->
-		<div class="grid-conteiner-tracks">
+		<div data-aos="flip-up" class="grid-conteiner-tracks">
 			<div class="cajas-tracks">
 				<audio src="multimedia/primer-beat.mp3" controls></audio>
 				<p>beat 1</p>
@@ -105,10 +106,10 @@
 		</div>
 	</main>
 	<section class="text">
-		<h2>Licensing info</h2>
+		<h2 data-aos="fade-right">Licensing info</h2>
 	</section>
-	<section class="grid-conteiner-licensing">
-		<div class="grid-mq-mp3">
+	<section data-aos="flip-up" class="grid-conteiner-licensing">
+		<div class="transformacion-sk" class="grid-mq-mp3" >
 			<dl>
 				<dd class="name-lease">Mp3 Lease</dd>
 				<dt>($30)</dt>
@@ -118,7 +119,7 @@
 				<dd> 50,000 stream cap</dd>
 			</dl>
 		</div>
-		<div class="grid-mq-wav">
+		<div class="transformacion-sk" class="grid-mq-wav" >
 			<dl>
 				<dd class="name-lease">Wav and Stems</dd>
 				<dt>($100)</dd>
@@ -129,7 +130,7 @@
 				<dd>Unlimited stream cap</dd>
 			</dl>
 		</div>
-		<div class="grid-mq-exc">
+		<div class="transformacion-sk" class="grid-mq-exc">
 			<dl>
 				<dd class="name-lease">Exclusive Rights</dd>
 				<dt>($250)</dt>
@@ -141,11 +142,11 @@
 		</div>
 	</section>
 	<section class="text">
-		<h2>Naim mixing and master service</h2>
+		<h2 data-aos="fade-right">Naim mixing and master service</h2>
 	</section>
 	<div>
 		<figure>
-			<img class="img-center" src="img/img-mixer.jpg" alt="">
+			<img data-aos="zoom-in" class="img-center" src="img/img-mixer.jpg" alt="">
 		</figure>
 	</div>
 	<footer>
@@ -162,6 +163,10 @@
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+	</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
 	</script>
 </body>
 
