@@ -1,0 +1,36 @@
+figure{
+    display: flex;
+    justify-content: center;
+    .img-center{
+        height: 34em ;
+        width: 70%;
+        border-radius: 1em;
+        margin-bottom: 1em;
+            @include md{
+            height: 23em;
+            }
+    }
+}
+.conteiner-mix{
+    text-align: center;
+    .title{
+        text-align: center;
+        margin: 1.5em 0em;
+        color: aliceblue;
+        h1,h2{
+            font-size: 2em;
+            font-weight: 600;
+        }
+    }
+}
+.mix-pic{
+    width: 70%;
+    height: 34em;
+        @include tablet{
+        height: 25em;
+        width: 50%;
+        }
+        @include md{
+        height: 15em;
+        }
+}

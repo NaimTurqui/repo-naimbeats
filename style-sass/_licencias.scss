@@ -1,0 +1,43 @@
+
+.licencias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 0.5em;
+    @include tablet{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "mp3"
+                            "wav"
+                            "exc";
+        width: 80%;
+        margin: auto;
+        }
+    .conteiner-licensing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        dl{
+            @include sm{
+            overflow: hidden;
+            margin: 0em;
+            margin-bottom: 2em;
+            }
+            background-color: $color-uno;
+            height: 20em;
+            border-radius: 0.5em;
+            @include flex (column,center,none);
+            text-align: center;
+            margin: 1em;
+            dd, dt{
+            color:$color-dos;
+            }
+            .name-lease,dt{
+            margin-bottom: 1.5em;
+            font-size: 23px;
+            }
+            }
+    }    
+}
+

@@ -1,0 +1,35 @@
+.conteiner-tracks{
+    border-bottom:solid  $color-dos;
+    background-color: $color-tres;
+    color: aliceblue;
+    @include flex(row,space-around,center);
+    padding: 0.4em;  
+        p{
+            border: solid rgb(205, 158, 186) 1.5px;
+            border-radius: 0.5em;
+            padding: 5px;
+            margin: 0.5em 0em;
+                @include md {
+                display: none;
+                }
+        }       
+        .icon-tracks{
+            background-color: $color-dos;
+            border-radius: 0.5em;
+            padding: 5px;
+            margin: 0.5em 0em;
+                @include sm {
+                    display: none;
+                }
+        }
+}
+.margin-tracks{
+    margin: 2em 0em;
+}
+
+
+
+
+
+
+

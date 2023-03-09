@@ -1,0 +1,34 @@
+.grid-sk{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+        @include tablet{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        }
+        @include md{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        }
+        @include sm{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        }
+    .caja-sk{
+        @include flex (column,center,center);
+        background-color: $color-tres;
+        color: aliceblue;
+        padding: .5em;
+        margin: 1em;
+        .img-sk{
+            height: 10em;
+            width: 80%;
+            grid-area: img;
+            margin: auto;
+        }
+        h2,h3{
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    }
+}

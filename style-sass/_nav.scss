@@ -1,0 +1,21 @@
+.top{
+    background-color:$color-uno;
+    ul{
+        height: 3em;
+        padding: 0%;
+        margin: 0%;
+        @include flex(row,space-evenly,flex-end);
+        list-style-type: none;
+        li:hover{
+            border-bottom: solid $color-dos;
+            margin-bottom: 0%;
+        }
+        a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+            @include sm{
+            font-size: 14px;
+            }
+        }
+    }
+}
