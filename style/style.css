@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;900&display=swap");
 .margin-form {
   margin: 5em 0em;
 }
@@ -7,52 +7,73 @@
 }
 
 .container-fluid form button {
-  background-color: #b193a2;
-}
-
-figure {
-  display: flex;
-  justify-content: center;
-}
-figure .img-center {
-  height: 34em;
-  width: 70%;
-  border-radius: 1em;
-  margin-bottom: 1em;
-}
-@media screen and (max-width: 768px) {
-  figure .img-center {
-    height: 23em;
-  }
+  background-color: #856593;
 }
 
 .conteiner-mix {
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
-.conteiner-mix .title {
-  text-align: center;
-  margin: 1.5em 0em;
-  color: aliceblue;
-}
-.conteiner-mix .title h1, .conteiner-mix .title h2 {
-  font-size: 2em;
-  font-weight: 600;
-}
-
-.mix-pic {
-  width: 70%;
-  height: 34em;
+@media screen and (max-width: 576px) {
+  .conteiner-mix {
+    height: auto;
+  }
 }
 @media screen and (max-width: 992px) {
-  .mix-pic {
-    height: 25em;
-    width: 50%;
+  .conteiner-mix {
+    height: auto;
+  }
+}
+.conteiner-mix video {
+  width: 100%;
+}
+.conteiner-mix .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.conteiner-mix .content h3, .conteiner-mix .content h1, .conteiner-mix .content h2 {
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .conteiner-mix .content h3, .conteiner-mix .content h1, .conteiner-mix .content h2 {
+    font-size: 1.5em;
   }
 }
 @media screen and (max-width: 768px) {
-  .mix-pic {
-    height: 15em;
+  .conteiner-mix .content h3, .conteiner-mix .content h1, .conteiner-mix .content h2 {
+    font-size: 1.2em;
   }
+}
+.conteiner-mix .content .compra-dos {
+  width: 30%;
+  border: solid;
+  border-radius: 30px;
+  text-align: center;
+  padding: 5px;
+  color: aliceblue;
+}
+.conteiner-mix .content .compra-dos h5 {
+  font-size: 10px;
+}
+@media screen and (max-width: 768px) {
+  .conteiner-mix .content .compra-dos h5 {
+    font-size: 2px;
+  }
+}
+.conteiner-mix .content .compra-dos:hover {
+  background-color: #856593;
 }
 
 * {
@@ -62,18 +83,21 @@ figure .img-center {
 }
 
 body {
-  background-color: #0d161d;
+  background-color: #030c14;
   font-size: 19px;
+  font-weight: 100;
 }
 
 .title {
   text-align: center;
-  margin: 5em 0em 3.5em;
   color: aliceblue;
 }
-.title h1, .title h2 {
-  font-size: 2em;
+.title h1 {
+  font-size: 2.5em;
   font-weight: 600;
+}
+.title h2 {
+  font-size: 2em;
 }
 
 .grid-mq-mp3 {
@@ -89,7 +113,7 @@ body {
 }
 
 .top {
-  background-color: #16222b;
+  background-color: #000000;
 }
 .top ul {
   height: 3em;
@@ -102,7 +126,7 @@ body {
   list-style-type: none;
 }
 .top ul li:hover {
-  border-bottom: solid #b193a2;
+  border-bottom: solid #856593;
   margin-bottom: 0%;
 }
 .top ul a {
@@ -143,7 +167,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0d161d;
   color: aliceblue;
   padding: 0.5em;
   margin: 1em;
@@ -151,17 +174,91 @@ body {
 .grid-sk .caja-sk .img-sk {
   height: 10em;
   width: 80%;
+  border-radius: 10%;
   grid-area: img;
   margin: auto;
 }
+@media screen and (max-width: 576px) {
+  .grid-sk .caja-sk .img-sk {
+    width: 12em;
+  }
+}
 .grid-sk .caja-sk h2, .grid-sk .caja-sk h3 {
-  font-size: 1.2em;
+  font-size: 1em;
+  font-weight: 0;
+}
+
+.kit-promotion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+  gap: 6em;
+  padding: 0em 1.5em;
+  margin: 7em 0em;
+  color: aliceblue;
+}
+@media screen and (max-width: 992px) {
+  .kit-promotion {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
+}
+.kit-promotion .compra {
+  border: solid;
+  border-radius: 30px;
+  text-align: center;
+  padding: 5px;
+}
+.kit-promotion .compra h5 {
+  font-size: 20px;
+}
+.kit-promotion img {
+  height: 28em;
+  width: 25em;
+  border-radius: 25px;
+}
+@media screen and (max-width: 616px) {
+  .kit-promotion img {
+    height: 18em;
+    width: 15em;
+  }
+}
+.kit-promotion h3 {
+  font-size: 50px;
   font-weight: 600;
+}
+.kit-promotion h4 {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.title-tracks {
+  text-align: center;
+  color: aliceblue;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 1em;
+}
+
+.tracks-top {
+  background-image: url(../img/background-top\ .jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 22em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
 }
 
 .conteiner-tracks {
-  border-bottom: solid #b193a2;
-  background-color: #0d161d;
+  border-bottom: solid 1.5px #856593;
+  background-color: #030c14;
   color: aliceblue;
   display: flex;
   flex-direction: row;
@@ -170,7 +267,9 @@ body {
   padding: 0.4em;
 }
 .conteiner-tracks p {
-  border: solid rgb(205, 158, 186) 1.5px;
+  border: solid 1.5px #856593;
+  width: 7.7em;
+  text-align: center;
   border-radius: 0.5em;
   padding: 5px;
   margin: 0.5em 0em;
@@ -181,7 +280,7 @@ body {
   }
 }
 .conteiner-tracks .icon-tracks {
-  background-color: #b193a2;
+  background-color: #856593;
   border-radius: 0.5em;
   padding: 5px;
   margin: 0.5em 0em;
@@ -194,6 +293,15 @@ body {
 
 .margin-tracks {
   margin: 2em 0em;
+}
+
+.lease-top {
+  background-color: #030c14;
+  height: 12em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .licencias {
@@ -218,7 +326,7 @@ body {
   text-align: center;
 }
 .licencias .conteiner-licensing dl {
-  background-color: #16222b;
+  background-color: #000000;
   height: 20em;
   border-radius: 0.5em;
   display: flex;
@@ -236,7 +344,7 @@ body {
   }
 }
 .licencias .conteiner-licensing dl dd, .licencias .conteiner-licensing dl dt {
-  color: #b193a2;
+  color: #856593;
 }
 .licencias .conteiner-licensing dl .name-lease, .licencias .conteiner-licensing dl dt {
   margin-bottom: 1.5em;
@@ -244,13 +352,37 @@ body {
 }
 
 footer {
-  background-color: #16222b;
-  padding: 2em;
-  margin-top: 1em;
+  height: 15em;
+  background-color: #000000;
+  padding: 3em;
   margin-bottom: 0em;
 }
-footer footer div, footer h5, footer p {
+@media screen and (max-width: 576px) {
+  footer {
+    padding: 0;
+    margin-top: 2em;
+  }
+}
+footer .texto {
   color: aliceblue;
+  text-align: center;
+}
+footer .texto h6 {
+  font-size: 25px;
+}
+footer .texto p {
+  font-size: 15px;
+}
+footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .icons .icon {
+  margin: 0em 1em;
+  padding: 5px;
+  background-color: #856593;
+  border-radius: 40%;
 }
 
 /*# sourceMappingURL=style.css.map */

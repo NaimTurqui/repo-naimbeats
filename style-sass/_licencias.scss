@@ -1,4 +1,9 @@
 
+.lease-top{
+    background-color: $color-uno;
+    height: 12em;
+    @include flex (row,center,center)
+}
 .licencias{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -24,7 +29,7 @@
             margin: 0em;
             margin-bottom: 2em;
             }
-            background-color: $color-uno;
+            background-color: $color-cuatro;
             height: 20em;
             border-radius: 0.5em;
             @include flex (column,center,none);

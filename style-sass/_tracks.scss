@@ -1,11 +1,30 @@
+.title-tracks{
+    text-align: center;
+    color: aliceblue;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin: 1em;
+}
+.tracks-top{
+    background-image:url(../img/background-top\ .jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 22em;
+    @include flex (row,center,center);
+    margin-bottom: 2em;
+}
 .conteiner-tracks{
-    border-bottom:solid  $color-dos;
-    background-color: $color-tres;
+    border-bottom: solid 1.5px $color-dos;
+    background-color: $color-uno;
     color: aliceblue;
     @include flex(row,space-around,center);
     padding: 0.4em;  
         p{
-            border: solid rgb(205, 158, 186) 1.5px;
+            border: solid 1.5px $color-dos;
+            width: 7.7em;
+            text-align: center;
             border-radius: 0.5em;
             padding: 5px;
             margin: 0.5em 0em;

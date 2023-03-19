@@ -16,19 +16,64 @@
         }
     .caja-sk{
         @include flex (column,center,center);
-        background-color: $color-tres;
         color: aliceblue;
         padding: .5em;
         margin: 1em;
         .img-sk{
             height: 10em;
             width: 80%;
+            border-radius: 10%;
             grid-area: img;
             margin: auto;
+            @include sm{
+                width:12em;
+            }
         }
         h2,h3{
-            font-size: 1.2em;
-            font-weight: 600;
+            font-size: 1em;
+            font-weight: 00;
         }
     }
+}
+.kit-promotion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+    gap: 6em;
+    padding: 0em 1.5em;
+    margin: 7em 0em;
+    color: aliceblue;
+    @include tablet{
+        flex-direction: column;
+        gap: 1em;
+        text-align: center;
+    }
+        .compra{
+            border: solid;
+            border-radius: 30px;
+            text-align: center;
+            padding: 5px;
+            h5{
+                font-size: 20px;
+            }
+        }
+        img{
+            height: 28em;
+            width: 25em;
+            border-radius: 25px;
+            @include mobile{
+                height: 18em;
+                width: 15em;
+            }
+        }
+        h3{
+            font-size: 50px;
+            font-weight: 600;
+        }
+        h4{
+            font-size: 45px;
+            font-weight: 500;
+        }
+
 }
